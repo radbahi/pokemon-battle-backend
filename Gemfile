@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.1'
 
 #ignore sqllite for heroku
-# group :development, :test do
-#   gem 'sqlite3'
-# end
+group :development, :test do
+  gem 'sqlite3'
+end
 group :production do
   gem 'pg'
 end
