@@ -9,12 +9,12 @@ type_list.each do |type|
   Type.create(type.to_h)
 end
 
-# pokemon_list = JSON.parse(File.read('db/pokemon.json'))
-# pokemon_list.each do |pokemon|
-#   Pokemon.create(pokemon.to_h)
-# end
+pokemon_list = JSON.parse(File.read('db/pokemon.json'))
+pokemon_list.each do |pokemon|
+  Pokemon.create(pokemon.to_h)
+end
 
-# moves_list = JSON.parse(File.read('db/moves.json'))
-# moves_list.each do |moves|
-#   Moves.create(moves.to_h)
-# end
+moves_list = JSON.parse(File.read('db/moves.json'))
+moves_list.each do |moves|
+  Moves.create(moves.to_h)
+end
