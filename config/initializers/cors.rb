@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'pokemon-battle-frontend.herokuapp.com'
+    origins 'https://radbahi.github.io'
 
     resource '*',
       headers: :any,
